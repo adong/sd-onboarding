@@ -1,3 +1,6 @@
+shared:
+    image: node:12
+
 jobs:
   main:
     template: template_namespace/nodejs_main
