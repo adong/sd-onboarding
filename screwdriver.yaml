@@ -3,5 +3,8 @@ shared:
 
 jobs:
   main:
-    template: template_namespace/nodejs_main
     requires: [~pr, ~commit]
+    steps:
+      - init: npm install
+      - test: npm test
+
